@@ -1,0 +1,26 @@
+private void method1(){
+System.out.println ("Parent's method1()");
+}
+public void method2() {
+System.out.println ("Parent's method2()");
+method1();
+}
+}
+class Child extends Parent {
+public void method1() {
+System.out.println ("Child's method1()");
+}
+public static void main(String args[]) {
+Parent p = new Child();
+p.method2();
+}}
+
+ANSWER OPTION = C 
+C.Prints : 
+Parent's method2()
+Parent's method1()
+
+EXPLANATION:- CREATE AN OBJECT IN TEST CLASS...AND INVOKE THE PARENT CLASS METHOD2
+THROUGH OBJECT...IT PRINTS METHOD2 BODY AS WELL AS DEFAULT METHOD1 BODY.....BECAUSE
+MENTION THE METHOD1() AS BODY AND ALSO AS WITHOUT BODY...THAT'S WHY IT PRINT DEFAULTLY....
+
